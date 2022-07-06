@@ -21,11 +21,12 @@ public class AccountCreationPageTest extends BaseClass {
 	
 	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
+
 	public void setup(String browser) {
 		launchApp(browser); 
 	}
-	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
+
+		@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void tearDown() {
 		getDriver().quit();
 	}
