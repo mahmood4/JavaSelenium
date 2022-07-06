@@ -5,6 +5,9 @@
 	<groupId>MyStoreProject</groupId>
 	<artifactId>MyStoreProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<xmlFiles>testng_all.xml</xmlFiles>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -80,7 +83,7 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<!--suppress UnresolvedMavenProperty -->
+
 						<suiteXmlFile>${xmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
