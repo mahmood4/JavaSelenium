@@ -1310,3 +1310,206 @@
 2022-07-04 21:43:52 DEBUG cache:44 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view_en.ftl"): Not found
 2022-07-04 21:43:52 DEBUG cache:44 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view.ftl"): Found
 2022-07-04 21:43:52 DEBUG cache:44 - Loading template for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/v3html/logs-view/v3-html-testrunner-logs-view.ftl"
+2022-07-05 20:22:56 DEBUG ResolutionCache:162 - Removing resolution chrome=103 from cache (expired on Mon Jul 04 22:42:47 EDT 2022)
+2022-07-05 20:22:56 DEBUG Shell:54 - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
+2022-07-05 20:22:57 DEBUG Shell:56 - Result: 
+2022-07-05 20:22:57 DEBUG Shell:54 - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
+2022-07-05 20:22:57 DEBUG Shell:56 - Result: 
+2022-07-05 20:22:57 DEBUG Shell:54 - Running command on the shell: [wmic.exe, datafile, where, name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', get, Version, /value]
+2022-07-05 20:22:57 DEBUG Shell:56 - Result: Version=103.0.5060.66
+2022-07-05 20:22:57 DEBUG ResolutionCache:162 - Removing resolution chrome103=103.0.5060.53 from cache (expired on Tue Jul 05 07:11:49 EDT 2022)
+2022-07-05 20:22:57 DEBUG InternalHttpClient:172 - ex-00000001: preparing request execution
+2022-07-05 20:22:57 DEBUG RequestAddCookies:114 - Cookie spec selected: strict
+2022-07-05 20:22:57 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2022-07-05 20:22:57 DEBUG ProtocolExec:158 - ex-00000001: target auth state: UNCHALLENGED
+2022-07-05 20:22:57 DEBUG ProtocolExec:164 - ex-00000001: proxy auth state: UNCHALLENGED
+2022-07-05 20:22:57 DEBUG ConnectExec:116 - ex-00000001: acquiring connection with route {s}->https://chromedriver.storage.googleapis.com:443
+2022-07-05 20:22:57 DEBUG InternalHttpClient:101 - ex-00000001: acquiring endpoint (3 MINUTES)
+2022-07-05 20:22:57 DEBUG PoolingHttpClientConnectionManager:261 - ex-00000001: endpoint lease request (3 MINUTES) [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+2022-07-05 20:22:57 DEBUG PoolingHttpClientConnectionManager:287 - ex-00000001: endpoint leased [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+2022-07-05 20:22:57 DEBUG PoolingHttpClientConnectionManager:322 - ex-00000001: acquired ep-00000000
+2022-07-05 20:22:57 DEBUG InternalHttpClient:120 - ex-00000001: acquired endpoint ep-00000000
+2022-07-05 20:22:57 DEBUG ConnectExec:123 - ex-00000001: opening connection {s}->https://chromedriver.storage.googleapis.com:443
+2022-07-05 20:22:57 DEBUG InternalHttpClient:162 - ep-00000000: connecting endpoint (30 SECONDS)
+2022-07-05 20:22:57 DEBUG PoolingHttpClientConnectionManager:410 - ep-00000000: connecting endpoint to https://chromedriver.storage.googleapis.com:443 (30 SECONDS)
+2022-07-05 20:22:57 DEBUG DefaultHttpClientConnectionOperator:145 - http-outgoing-0: connecting to chromedriver.storage.googleapis.com/142.251.41.80:443
+2022-07-05 20:22:57 DEBUG SSLConnectionSocketFactory:214 - Connecting socket to chromedriver.storage.googleapis.com/142.251.41.80:443 with timeout 30 SECONDS
+2022-07-05 20:22:57 DEBUG SSLConnectionSocketFactory:270 - Enabled protocols: [TLSv1.3, TLSv1.2]
+2022-07-05 20:22:57 DEBUG SSLConnectionSocketFactory:271 - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2022-07-05 20:22:57 DEBUG SSLConnectionSocketFactory:275 - Starting handshake
+2022-07-05 20:22:57 DEBUG SSLConnectionSocketFactory:58 - Secure session established
+2022-07-05 20:22:57 DEBUG SSLConnectionSocketFactory:59 -  negotiated protocol: TLSv1.3
+2022-07-05 20:22:57 DEBUG SSLConnectionSocketFactory:60 -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+2022-07-05 20:22:58 DEBUG SSLConnectionSocketFactory:70 -  peer principal: CN=*.storage.googleapis.com
+2022-07-05 20:22:58 DEBUG SSLConnectionSocketFactory:79 -  peer alternative names: [*.storage.googleapis.com, *.googleapis.com, commondatastorage.googleapis.com, *.commondatastorage.googleapis.com, storage.googleapis.com, storage.mtls.googleapis.com, *.appspot.com.storage.googleapis.com, *.content-storage.googleapis.com, *.content-storage-p2.googleapis.com, *.content-storage-upload.googleapis.com, *.content-storage-download.googleapis.com, *.storage-upload.googleapis.com, *.storage-download.googleapis.com]
+2022-07-05 20:22:58 DEBUG SSLConnectionSocketFactory:83 -  issuer principal: CN=GTS CA 1C3, O=Google Trust Services LLC, C=US
+2022-07-05 20:22:58 DEBUG DefaultHttpClientConnectionOperator:151 - http-outgoing-0: connection established 192.168.0.52:53320<->142.251.41.80:443
+2022-07-05 20:22:58 DEBUG PoolingHttpClientConnectionManager:421 - ep-00000000: connected http-outgoing-0
+2022-07-05 20:22:58 DEBUG InternalHttpClient:166 - ep-00000000: endpoint connected
+2022-07-05 20:22:58 DEBUG MainClientExec:102 - ex-00000001: executing GET /LATEST_RELEASE_103 HTTP/1.1
+2022-07-05 20:22:58 DEBUG InternalHttpClient:218 - ep-00000000: start execution ex-00000001
+2022-07-05 20:22:58 DEBUG PoolingHttpClientConnectionManager:598 - ep-00000000: executing exchange ex-00000001 over http-outgoing-0
+2022-07-05 20:22:58 DEBUG headers:169 - http-outgoing-0 >> GET /LATEST_RELEASE_103 HTTP/1.1
+2022-07-05 20:22:58 DEBUG headers:172 - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+2022-07-05 20:22:58 DEBUG headers:172 - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+2022-07-05 20:22:58 DEBUG headers:172 - http-outgoing-0 >> cache-control: max-age=0
+2022-07-05 20:22:58 DEBUG headers:172 - http-outgoing-0 >> Host: chromedriver.storage.googleapis.com
+2022-07-05 20:22:58 DEBUG headers:172 - http-outgoing-0 >> Connection: keep-alive
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 >> "GET /LATEST_RELEASE_103 HTTP/1.1[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 >> "Host: chromedriver.storage.googleapis.com[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 >> "[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "X-GUploader-UploadID: ADPycduxiTkc_tJD41c1Uc_nTrLYir6rLFl3ibDPJBvDo8CYdvY7gmnXaaGRC6-M-3ZRCz9Ap3QKiBibhrIoLHkEqbg2QAtFQlQb[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "x-goog-generation: 1655887236252160[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "x-goog-metageneration: 1[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "x-goog-stored-content-encoding: identity[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "x-goog-stored-content-length: 13[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "x-goog-hash: crc32c=VvHXQg==[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "x-goog-hash: md5=HBhNqNqj7gspC4qVzR+hvw==[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "x-goog-storage-class: STANDARD[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Content-Length: 13[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Server: UploadServer[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Date: Tue, 05 Jul 2022 23:41:06 GMT[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Expires: Wed, 06 Jul 2022 00:41:06 GMT[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Cache-Control: public, max-age=3600[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Age: 2510[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Last-Modified: Wed, 22 Jun 2022 08:40:36 GMT[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "ETag: "1c184da8daa3ee0b290b8a95cd1fa1bf"[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Content-Type: text/plain[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:92 - http-outgoing-0 << "[\r][\n]"
+2022-07-05 20:22:58 DEBUG wire:106 - http-outgoing-0 << "103.0.5060.53"
+2022-07-05 20:22:58 DEBUG headers:158 - http-outgoing-0 << HTTP/1.1 200 OK
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << X-GUploader-UploadID: ADPycduxiTkc_tJD41c1Uc_nTrLYir6rLFl3ibDPJBvDo8CYdvY7gmnXaaGRC6-M-3ZRCz9Ap3QKiBibhrIoLHkEqbg2QAtFQlQb
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << x-goog-generation: 1655887236252160
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << x-goog-metageneration: 1
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << x-goog-stored-content-encoding: identity
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << x-goog-stored-content-length: 13
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << x-goog-hash: crc32c=VvHXQg==
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << x-goog-hash: md5=HBhNqNqj7gspC4qVzR+hvw==
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << x-goog-storage-class: STANDARD
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Accept-Ranges: bytes
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Content-Length: 13
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Server: UploadServer
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Date: Tue, 05 Jul 2022 23:41:06 GMT
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Expires: Wed, 06 Jul 2022 00:41:06 GMT
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Cache-Control: public, max-age=3600
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Age: 2510
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Last-Modified: Wed, 22 Jun 2022 08:40:36 GMT
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << ETag: "1c184da8daa3ee0b290b8a95cd1fa1bf"
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Content-Type: text/plain
+2022-07-05 20:22:58 DEBUG headers:161 - http-outgoing-0 << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2022-07-05 20:22:58 DEBUG MainClientExec:126 - ex-00000001: connection can be kept alive for 3 MINUTES
+2022-07-05 20:22:58 DEBUG InternalHttpClient:260 - ep-00000000: releasing valid endpoint
+2022-07-05 20:22:58 DEBUG PoolingHttpClientConnectionManager:352 - ep-00000000: releasing endpoint
+2022-07-05 20:22:58 DEBUG PoolingHttpClientConnectionManager:371 - ep-00000000: connection http-outgoing-0 can be kept alive for 3 MINUTES
+2022-07-05 20:22:58 DEBUG PoolingHttpClientConnectionManager:385 - ep-00000000: connection released [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2022-07-05 20:22:58 DEBUG VersionDetector:163 - Latest version of chromedriver according to https://chromedriver.storage.googleapis.com/LATEST_RELEASE_103 is 103.0.5060.53
+2022-07-05 20:22:58 INFO  WebDriverManager:587 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-05 20:22:58 DEBUG ResolutionCache:126 - Storing resolution chrome=103 in cache (valid until 21:22:58 05/07/2022 EDT)
+2022-07-05 20:22:58 DEBUG ResolutionCache:126 - Storing resolution chrome103=103.0.5060.53 in cache (valid until 20:22:58 06/07/2022 EDT)
+2022-07-05 20:22:58 DEBUG WebDriverManager:544 - Driver chromedriver 103.0.5060.53 found in cache
+2022-07-05 20:22:58 INFO  WebDriverManager:639 - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-05 20:23:04 INFO  Log:11 - =====================================orderHistoryandDetailsTest TEST START=========================================
+2022-07-05 20:23:11 INFO  Log:15 - =====================================orderHistoryandDetailsTest TEST END=========================================
+2022-07-05 20:23:11 DEBUG ResolutionCache:187 - Resolution chrome=103 in cache (valid until 21:22:58 05/07/2022 EDT)
+2022-07-05 20:23:11 DEBUG ResolutionCache:187 - Resolution chrome103=103.0.5060.53 in cache (valid until 20:22:58 06/07/2022 EDT)
+2022-07-05 20:23:11 INFO  WebDriverManager:587 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-05 20:23:11 DEBUG WebDriverManager:544 - Driver chromedriver 103.0.5060.53 found in cache
+2022-07-05 20:23:11 INFO  WebDriverManager:639 - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-05 20:23:16 INFO  Log:11 - =====================================wishListTest TEST START=========================================
+2022-07-05 20:23:24 INFO  Log:15 - =====================================wishListTest TEST END=========================================
+2022-07-05 20:23:25 DEBUG ResolutionCache:187 - Resolution chrome=103 in cache (valid until 21:22:58 05/07/2022 EDT)
+2022-07-05 20:23:25 DEBUG ResolutionCache:187 - Resolution chrome103=103.0.5060.53 in cache (valid until 20:22:58 06/07/2022 EDT)
+2022-07-05 20:23:25 INFO  WebDriverManager:587 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-05 20:23:25 DEBUG WebDriverManager:544 - Driver chromedriver 103.0.5060.53 found in cache
+2022-07-05 20:23:25 INFO  WebDriverManager:639 - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-05 20:23:29 INFO  Log:11 - =====================================loginTest TEST START=========================================
+2022-07-05 20:23:29 INFO  Log:22 - user is going to click on SignIn
+2022-07-05 20:23:32 INFO  Log:22 - Enter Username and Password
+2022-07-05 20:23:36 INFO  Log:22 - Verifying if user is able to login
+2022-07-05 20:23:36 INFO  Log:22 - Login is Sucess
+2022-07-05 20:23:36 INFO  Log:15 - =====================================loginTest TEST END=========================================
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/spark.spa.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/spark.spa.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "commons/commons-variables.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/commons/commons-variables.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "commons/commons-macros.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/commons/commons-macros.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/macros/attributes.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/macros/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/macros/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/macros/log.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/macros/recurse_nodes.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/head.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/partials/head.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/partials/head.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/commons/commons-inject-css.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/partials/navbar.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/partials/sidenav.ftl"
+2022-07-05 20:23:37 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/test.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+2022-07-05 20:23:37 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+2022-07-05 20:23:37 DEBUG cache:44 - Loading template for "spark/partials/test.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/partials/test.ftl"
+2022-07-05 20:23:38 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+2022-07-05 20:23:38 DEBUG cache:44 - Loading template for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/partials/standard-content.ftl"
+2022-07-05 20:23:38 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-05 20:23:38 DEBUG cache:44 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-07-05 20:23:38 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+2022-07-05 20:23:38 DEBUG cache:44 - Loading template for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/partials/dashboard.ftl"
+2022-07-05 20:23:38 DEBUG cache:44 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+2022-07-05 20:23:38 DEBUG cache:44 - Loading template for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/spark/partials/scripts.ftl"
+2022-07-05 20:23:38 DEBUG cache:44 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+2022-07-05 20:23:38 DEBUG cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+2022-07-05 20:23:38 DEBUG cache:44 - Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar!/com/aventstack/extentreports/view/commons/commons-inject-js.ftl"
