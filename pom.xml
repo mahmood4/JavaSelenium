@@ -32,6 +32,9 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>${testSuite}</suiteXmlFile>
 							</suiteXmlFiles>
+							<systemPropertyVariables>
+								<appURL>${url}</appURL>
+							</systemPropertyVariables>
 						</configuration>
 					</plugin>
 				</plugins>
