@@ -5,9 +5,9 @@
 	<groupId>MyStoreProject</groupId>
 	<artifactId>MyStoreProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties>
+<!--	<properties>
 		<xmlFiles>testng_all.xml</xmlFiles>
-	</properties>
+	</properties>-->
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
