@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Get Source Code') {
             steps {
-                git credentialsId: '291a3c49-fa9f-409c-ad87-cae9c219fcf6', url: 'https://github.com/mahmood4/JavaSelenium.git'
+                git url: 'https://github.com/mahmood4/JavaSelenium.git'
                 echo 'Hello World'
             }
         }
@@ -21,7 +21,7 @@ pipeline {
                 {
                     steps
                             {
-                                bat script: 'mvn test -Dbrowser=localchrome'
+                                bat "mvn clean package -PSanity -DskipTests=true"
                             }
                 }
         stage('Publish Report')
