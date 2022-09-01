@@ -28,7 +28,7 @@ pipeline {
                 {
                     steps
                             {
-                                publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'C:\\Users\\User\\Downloads\\MyProject-master04\\MyStoreProject\\test-output\\', reportFiles: 'target/surefire-reports/Extent*.html', reportName: 'Pipeline', reportTitles: ''])
+                                publishHTML(target: [allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'C:\\Users\\User\\Downloads\\MyProject-master04\\MyStoreProject\\test-output\\', reportFiles: 'target/surefire-reports/Extent*.html', reportName: 'Pipeline', reportTitles: ''])
                             }
                 }
     }
