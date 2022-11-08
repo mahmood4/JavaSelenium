@@ -1,4 +1,5 @@
 package com.mystore.testcases;
+import java.io.IOException;
 import java.util.HashMap;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +23,7 @@ public class AccountCreationPageTest extends BaseClass {
 	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
 
-	public void setup(String browser) {
+	public void setup(String browser) throws IOException {
 		launchApp(browser); 
 	}
 

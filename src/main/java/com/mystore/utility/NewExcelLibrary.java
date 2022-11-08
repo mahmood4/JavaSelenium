@@ -36,19 +36,6 @@ public class NewExcelLibrary {
 		}
 	}
 
-	public NewExcelLibrary(String path) {
-
-		this.path = path;
-		try {
-			fis = new FileInputStream(path);
-			workbook = new XSSFWorkbook(fis);
-			sheet = workbook.getSheetAt(0);
-			fis.close();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
 	// returns the row count in a sheet
 		public int getRowCount(String sheetName){

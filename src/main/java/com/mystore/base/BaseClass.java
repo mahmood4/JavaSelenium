@@ -3,6 +3,7 @@ package com.mystore.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -59,7 +60,23 @@ public class BaseClass {
 		return driver.get();
 	}
 
-	public void launchApp(String browserName) {
+	//@Parameters("browser")
+	public void launchApp(String browserName1) throws IOException {
+		prop = new Properties();
+
+		prop.load(BaseClass.class.getClassLoader().getResourceAsStream("Mavenbrowser.properties"));
+		System.out.println("URL    "+prop.getProperty("url"));
+		String browserName=prop.getProperty("browserVal");
+
+
+		//FileInputStream browserName = new FileInputStream(
+		//		System.getProperty("user.dir") + "\\Configuration\\config.properties");
+		//prop.load(browserVal);
+	//	browserName=prop.getProperty("browserVal");
+	//	String browserName=prop.getProperty("browserVal");
+
+
+		System.out.println("Browser Name   "+browserName);
 		// String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -77,12 +94,14 @@ public class BaseClass {
 		//Delete all the cookies
 		getDriver().manage().deleteAllCookies();
 		//Implicit TimeOuts
-		getDriver().manage().timeouts().implicitlyWait
-		(Integer.parseInt(prop.getProperty("implicitWait")),TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(prop.getProperty("implicitWait"))));
+		//getDriver().manage().timeouts().implicitlyWait
+		//(Integer.parseInt(prop.getProperty("implicitWait")),TimeUnit.SECONDS);
 		//PageLoad TimeOuts
-		getDriver().manage().timeouts().pageLoadTimeout
-		(Integer.parseInt(prop.getProperty("pageLoadTimeOut")),TimeUnit.SECONDS);
-		//Launching the URL
+		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Integer.parseInt(prop.getProperty("pageLoadTimeOut"))));
+	//	(Integer.parseInt(prop.getProperty("pageLoadTimeOut")),TimeUnit.SECONDS);
+		//Launching the URLURL
+		System.out.println("URL    "+prop.getProperty("url"));
 		getDriver().get(prop.getProperty("url"));
 	}
 

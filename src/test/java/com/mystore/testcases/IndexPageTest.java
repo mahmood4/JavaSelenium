@@ -11,6 +11,8 @@ import com.mystore.base.BaseClass;
 import com.mystore.pageobjects.IndexPage;
 import com.mystore.utility.Log;
 
+import java.io.IOException;
+
 /**
  * @author Hitendra
  *
@@ -20,7 +22,7 @@ public class IndexPageTest extends BaseClass {
     
 	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup(String browser) {
+	public void setup(String browser) throws IOException {
 		launchApp(browser); 
 	}
 	

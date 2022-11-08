@@ -64,7 +64,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Aug 22, 2022 09:03:20 PM</span>
+                    <span class="badge badge-primary">Oct 26, 2022 09:19:45 PM</span>
                 </a>
             </li>
         </ul>
@@ -109,8 +109,8 @@
                                             <i class="fa fa-exclamation-circle"></i>
                                         </a>
                                         <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-                                            <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-	                                        
+                                            
+	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 	                                        
 	                                        
 	                                        
@@ -123,28 +123,28 @@
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-                                    <li class="test-item"  status="pass" test-id="1"
+                                    <li class="test-item"  status="fail" test-id="1"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">verifyLogo</p> 
-                                                <p class="duration text-sm">0h 0m 3s+67ms</p> 
-                                                <span class="datetime">21:03:29 PM</span>
+                                                <p class="name">createAccountTest</p> 
+                                                <p class="duration text-sm">0h 0m 19s+581ms</p> 
+                                                <span class="datetime">21:19:53 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">verifyLogo</h5>
-                                                        <span class='badge badge-success'>08.22.2022 21:03:29</span>
-                                                        <span class='badge badge-danger'>08.22.2022 21:03:32</span>
-                                                        <span class='badge badge-default'>0h 0m 3s+67ms</span>
+                                                        <h5 class="test-status text-fail">createAccountTest</h5>
+                                                        <span class='badge badge-success'>10.26.2022 21:19:53</span>
+                                                        <span class='badge badge-danger'>10.26.2022 21:20:13</span>
+                                                        <span class='badge badge-default'>0h 0m 19s+581ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -160,10 +160,31 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>9:03:32 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:13 PM</td>
 				<td>
-						Pass Test case is: verifyLogo
+						<span class='badge white-text red'>createAccountTest - Test Case Failed</span>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:13 PM</td>
+				<td>
+						<span class='badge white-text red'>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-SO5G69R', ip: '10.0.0.234', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0e14b1b9c862fa187e671d17365dc86, actions {actions=[org.openqa.selenium.interactions.Sequence@1220ef43]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57430/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a0e14b1b9c862fa187e671d17365dc86 - Test Case Failed</span>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:13 PM</td>
+				<td>
+						ScreenShot is Attached
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092013.png' src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092013.png' data-src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092013.png'>
 				</td>
 			</tr>
 	</tbody>
@@ -171,28 +192,28 @@
 </div>
                                         </div>
                                     </li>
-                                    <li class="test-item"  status="pass" test-id="2"
+                                    <li class="test-item"  status="fail" test-id="2"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">verifyLogo</p> 
-                                                <p class="duration text-sm">0h 0m 0s+759ms</p> 
-                                                <span class="datetime">21:03:34 PM</span>
+                                                <p class="name">createAccountTest</p> 
+                                                <p class="duration text-sm">0h 0m 14s+346ms</p> 
+                                                <span class="datetime">21:20:21 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">verifyLogo</h5>
-                                                        <span class='badge badge-success'>08.22.2022 21:03:34</span>
-                                                        <span class='badge badge-danger'>08.22.2022 21:03:35</span>
-                                                        <span class='badge badge-default'>0h 0m 0s+759ms</span>
+                                                        <h5 class="test-status text-fail">createAccountTest</h5>
+                                                        <span class='badge badge-success'>10.26.2022 21:20:21</span>
+                                                        <span class='badge badge-danger'>10.26.2022 21:20:36</span>
+                                                        <span class='badge badge-default'>0h 0m 14s+346ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -208,10 +229,31 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>9:03:35 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:35 PM</td>
 				<td>
-						Pass Test case is: verifyLogo
+						<span class='badge white-text red'>createAccountTest - Test Case Failed</span>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:35 PM</td>
+				<td>
+						<span class='badge white-text red'>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-SO5G69R', ip: '10.0.0.234', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7377eff7869ef83ab1c74b435c5d6e51, actions {actions=[org.openqa.selenium.interactions.Sequence@18d003cd]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57624/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7377eff7869ef83ab1c74b435c5d6e51 - Test Case Failed</span>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:36 PM</td>
+				<td>
+						ScreenShot is Attached
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092035.png' src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092035.png' data-src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092035.png'>
 				</td>
 			</tr>
 	</tbody>
@@ -219,28 +261,28 @@
 </div>
                                         </div>
                                     </li>
-                                    <li class="test-item"  status="pass" test-id="3"
+                                    <li class="test-item"  status="fail" test-id="3"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">verifyLogo</p> 
-                                                <p class="duration text-sm">0h 0m 0s+279ms</p> 
-                                                <span class="datetime">21:03:39 PM</span>
+                                                <p class="name">createAccountTest</p> 
+                                                <p class="duration text-sm">0h 0m 13s+922ms</p> 
+                                                <span class="datetime">21:20:43 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">verifyLogo</h5>
-                                                        <span class='badge badge-success'>08.22.2022 21:03:39</span>
-                                                        <span class='badge badge-danger'>08.22.2022 21:03:39</span>
-                                                        <span class='badge badge-default'>0h 0m 0s+279ms</span>
+                                                        <h5 class="test-status text-fail">createAccountTest</h5>
+                                                        <span class='badge badge-success'>10.26.2022 21:20:43</span>
+                                                        <span class='badge badge-danger'>10.26.2022 21:20:57</span>
+                                                        <span class='badge badge-default'>0h 0m 13s+922ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -256,10 +298,31 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>9:03:39 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:57 PM</td>
 				<td>
-						Pass Test case is: verifyLogo
+						<span class='badge white-text red'>createAccountTest - Test Case Failed</span>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:57 PM</td>
+				<td>
+						<span class='badge white-text red'>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-SO5G69R', ip: '10.0.0.234', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49550cc1b18388b8cb1640d14200fc3b, actions {actions=[org.openqa.selenium.interactions.Sequence@7f85217c]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57798/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 49550cc1b18388b8cb1640d14200fc3b - Test Case Failed</span>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:20:57 PM</td>
+				<td>
+						ScreenShot is Attached
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092057.png' src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092057.png' data-src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/createAccountTest_20221026092057.png'>
 				</td>
 			</tr>
 	</tbody>
@@ -267,28 +330,28 @@
 </div>
                                         </div>
                                     </li>
-                                    <li class="test-item"  status="pass" test-id="4"
+                                    <li class="test-item"  status="fail" test-id="4"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">verifyTitle</p> 
-                                                <p class="duration text-sm">0h 0m 0s+45ms</p> 
-                                                <span class="datetime">21:03:40 PM</span>
+                                                <p class="name">verifyCreateAccountPageTest</p> 
+                                                <p class="duration text-sm">0h 0m 15s+495ms</p> 
+                                                <span class="datetime">21:21:03 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">verifyTitle</h5>
-                                                        <span class='badge badge-success'>08.22.2022 21:03:40</span>
-                                                        <span class='badge badge-danger'>08.22.2022 21:03:40</span>
-                                                        <span class='badge badge-default'>0h 0m 0s+45ms</span>
+                                                        <h5 class="test-status text-fail">verifyCreateAccountPageTest</h5>
+                                                        <span class='badge badge-success'>10.26.2022 21:21:03</span>
+                                                        <span class='badge badge-danger'>10.26.2022 21:21:19</span>
+                                                        <span class='badge badge-default'>0h 0m 15s+495ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -304,106 +367,25 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>9:03:40 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:21:18 PM</td>
 				<td>
-						Pass Test case is: verifyTitle
+						<span class='badge white-text red'>verifyCreateAccountPageTest - Test Case Failed</span>
 				</td>
 			</tr>
-	</tbody>
-</table>
-</div>
-                                        </div>
-                                    </li>
-                                    <li class="test-item"  status="pass" test-id="5"
-                                            author=""
-                                            tag=""
-                                            device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
-                                        </div>
-                                        <div class="open-test">
-                                            <div class="test-detail"> 
-                                                <p class="name">verifyTitle</p> 
-                                                <p class="duration text-sm">0h 0m 0s+12ms</p> 
-                                                <span class="datetime">21:03:45 PM</span>
-                                            </div>
-                                        </div>
-                                        <div class="test-contents d-none">
-                                            <div class="detail-head">
-                                                <div class="p-v-10 d-inline-block"> 
-                                                    <div class="info">
-                                                        <h5 class="test-status text-pass">verifyTitle</h5>
-                                                        <span class='badge badge-success'>08.22.2022 21:03:45</span>
-                                                        <span class='badge badge-danger'>08.22.2022 21:03:45</span>
-                                                        <span class='badge badge-default'>0h 0m 0s+12ms</span>
-                                                    </div>
-                                                    <div class="m-t-10 m-l-5">
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>9:03:45 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:21:18 PM</td>
 				<td>
-						Pass Test case is: verifyTitle
+						<span class='badge white-text red'>java.lang.AssertionError: expected [true] but found [false] - Test Case Failed</span>
 				</td>
 			</tr>
-	</tbody>
-</table>
-</div>
-                                        </div>
-                                    </li>
-                                    <li class="test-item"  status="pass" test-id="6"
-                                            author=""
-                                            tag=""
-                                            device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
-                                        </div>
-                                        <div class="open-test">
-                                            <div class="test-detail"> 
-                                                <p class="name">verifyTitle</p> 
-                                                <p class="duration text-sm">0h 0m 0s+13ms</p> 
-                                                <span class="datetime">21:03:50 PM</span>
-                                            </div>
-                                        </div>
-                                        <div class="test-contents d-none">
-                                            <div class="detail-head">
-                                                <div class="p-v-10 d-inline-block"> 
-                                                    <div class="info">
-                                                        <h5 class="test-status text-pass">verifyTitle</h5>
-                                                        <span class='badge badge-success'>08.22.2022 21:03:50</span>
-                                                        <span class='badge badge-danger'>08.22.2022 21:03:50</span>
-                                                        <span class='badge badge-default'>0h 0m 0s+13ms</span>
-                                                    </div>
-                                                    <div class="m-t-10 m-l-5">
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>9:03:50 PM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>9:21:19 PM</td>
 				<td>
-						Pass Test case is: verifyTitle
+						ScreenShot is Attached
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/verifyCreateAccountPageTest_20221026092118.png' src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/verifyCreateAccountPageTest_20221026092118.png' data-src='http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/verifyCreateAccountPageTest_20221026092118.png'>
 				</td>
 			</tr>
 	</tbody>
