@@ -21,7 +21,7 @@ pipeline {
                 {
                     steps
                             {
-                                bat "mvn clean package -PSanity -DskipTests=true"
+                                bat "mvn install -POne -Dbrowser=Chrome"
                             }
                 }
         stage('Publish Report')
