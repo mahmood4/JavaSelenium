@@ -1,9 +1,11 @@
 package com.mystore.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -11,6 +13,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.ietf.jgss.Oid;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -57,6 +60,8 @@ public class BaseClass {
 
 	public static WebDriver getDriver() {
 		// Get Driver from threadLocalmap
+
+
 		return driver.get();
 	}
 
@@ -64,26 +69,25 @@ public class BaseClass {
 	public void launchApp(String browserName1) throws IOException {
 		prop = new Properties();
 
+
 		prop.load(BaseClass.class.getClassLoader().getResourceAsStream("Mavenbrowser.properties"));
 		System.out.println("URL    "+prop.getProperty("url"));
 		String browserName=prop.getProperty("browserVal");
-
-
-		//FileInputStream browserName = new FileInputStream(
-		//		System.getProperty("user.dir") + "\\Configuration\\config.properties");
-		//prop.load(browserVal);
-	//	browserName=prop.getProperty("browserVal");
-	//	String browserName=prop.getProperty("browserVal");
-
 
 		System.out.println("Browser Name   "+browserName);
 		// String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
+			ChromeOptions co = new ChromeOptions();
+			co.addExtensions(new File("C:\\Users\\User\\Downloads\\Adblock-Plusfree-ad-blocker.crx"));
+
+
 			// Set Browser to ThreadLocalMap
-			driver.set(new ChromeDriver());
+			driver.set(new ChromeDriver(co));
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
-			WebDriverManager.firefoxdriver().setup();
+			System.setProperty("webdriver.gecko.driver","c:\\Test\\geckodriver.exe"); // Setting system properties of FirefoxDriver
+			//WebDriver driver = new FirefoxDriver(); //Creating an object of FirefoxDriver
+			//WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());
 		} else if (browserName.equalsIgnoreCase("Edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -102,6 +106,15 @@ public class BaseClass {
 	//	(Integer.parseInt(prop.getProperty("pageLoadTimeOut")),TimeUnit.SECONDS);
 		//Launching the URLURL
 		System.out.println("URL    "+prop.getProperty("url"));
+
+		ArrayList<String> wid = new ArrayList<String>(getDriver().getWindowHandles());
+		//switch to active tab
+// driver.switchTo().window(wid.get(1));
+		System.out.println("Page title of active tab: " + getDriver().getTitle());
+		//switch to parent
+		getDriver().switchTo().window(wid.get(0));
+
+
 		getDriver().get(prop.getProperty("url"));
 	}
 

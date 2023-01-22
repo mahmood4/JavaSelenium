@@ -119,4 +119,73 @@ public class DataProviders {
 		return data;
 	}
 
+	@DataProvider(name = "GeneralData")
+	public Object[][] GetData() {
+
+		// Totals rows count
+		int rows = obj.getRowCount("GeneralData");
+		// Total Columns
+		int column = obj.getColumnCount("GeneralData");
+		int actRows = rows - 1;
+		//Created an object of array to store data
+		Object[][] data = new Object[actRows][1];
+
+		for (int i = 0; i < actRows; i++) {
+			Map<String, String> hashMap = new HashMap<>();
+			for (int j = 0; j < column; j++) {
+				hashMap.put(obj.getCellData("AccountCreationData", j, 1),
+						obj.getCellData("AccountCreationData", j, i + 2));
+			}
+			data[i][0]=hashMap;
+		}
+		return data;
+	}
+
+
+	@DataProvider(name = "Register")
+	public Object[][] RegData() {
+
+		// Totals rows count
+		int rows = obj.getRowCount("RegUser");
+		// Total Columns
+		int column = obj.getColumnCount("RegUser");
+		int actRows = rows - 1;
+		//Created an object of array to store data
+		Object[][] data = new Object[actRows][1];
+
+		for (int i = 0; i < actRows; i++) {
+			Map<String, String> hashMap = new HashMap<>();
+			for (int j = 0; j < column; j++) {
+				hashMap.put(obj.getCellData("RegUser", j, 1),
+						obj.getCellData("RegUser", j, i + 2));
+			}
+			data[i][0]=hashMap;
+		}
+		return data;
+	}
+
+	@DataProvider(name = "Contact")
+	public Object[][] ContactData() {
+
+		// Totals rows count
+		int rows = obj.getRowCount("Contact");
+		// Total Columns
+		int column = obj.getColumnCount("Contact");
+		int actRows = rows - 1;
+		//Created an object of array to store data
+		Object[][] data = new Object[actRows][1];
+
+		for (int i = 0; i < actRows; i++) {
+			Map<String, String> hashMap = new HashMap<>();
+			for (int j = 0; j < column; j++) {
+				hashMap.put(obj.getCellData("Contact", j, 1),
+						obj.getCellData("Contact", j, i + 2));
+			}
+			data[i][0]=hashMap;
+		}
+		return data;
+	}
+
+
+
 }

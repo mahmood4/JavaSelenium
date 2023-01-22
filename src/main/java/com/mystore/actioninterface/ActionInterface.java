@@ -25,6 +25,9 @@ public interface ActionInterface {
 	public boolean switchToDefaultFrame(WebDriver driver);
 	public void mouseOverElement(WebDriver driver,WebElement element);
 	public boolean moveToElement(WebDriver driver, WebElement ele);
+
+	void uploadFile(WebDriver driver, WebElement ele, String filepath);
+
 	public boolean mouseover(WebDriver driver, WebElement ele);
 	public boolean draggable(WebDriver driver,WebElement source, int x, int y);
 	public boolean draganddrop(WebDriver driver,WebElement source, WebElement target);
@@ -45,7 +48,9 @@ public interface ActionInterface {
 	public void implicitWait(WebDriver driver, int timeOut);
 	public void explicitWait(WebDriver driver, WebElement element, int timeOut);
 	public void pageLoadTimeOut(WebDriver driver, int timeOut);
+
 	public String screenShot(WebDriver driver, String filename);
+
 	public String getCurrentTime();
 
 }

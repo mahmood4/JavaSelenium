@@ -39,6 +39,7 @@ public class HomePage extends BaseClass {
 	
 	public String getCurrURL() throws Throwable {
 		String homePageURL=action.getCurrentURL(getDriver());
+		System.out.println("homePageURL    "+homePageURL);
 		return homePageURL;
 	}
 }

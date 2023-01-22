@@ -205,12 +205,12 @@ public class Action extends BaseClass implements ActionInterface {
 	/**
 	 * select value from DD by using value
 	 * 
-	 * @param locator     : Action to be performed on element (Get it from Object
+	 * @param //locator     : Action to be performed on element (Get it from Object
 	 *                    repository)
 	 * 
-	 * @param value       : Value wish to select from dropdown list.
+	 * @param //value       : Value wish to select from dropdown list.
 	 * 
-	 * @param locatorName : Meaningful name to the element (Ex:Year Dropdown, items
+	 * @param //#locatorName : Meaningful name to the element (Ex:Year Dropdown, items
 	 *                    Listbox etc..)
 	 */
 
@@ -237,12 +237,12 @@ public class Action extends BaseClass implements ActionInterface {
 	/**
 	 * select value from DropDown by using selectByVisibleText
 	 * 
-	 * @param locator     : Action to be performed on element (Get it from Object
+	 * @param //locator     : Action to be performed on element (Get it from Object
 	 *                    repository)
 	 * 
 	 * @param visibletext : VisibleText wish to select from dropdown list.
 	 * 
-	 * @param locatorName : Meaningful name to the element (Ex:Year Dropdown, items
+	 * @param //locatorName : Meaningful name to the element (Ex:Year Dropdown, items
 	 *                    Listbox etc..)
 	 */
 
@@ -439,6 +439,15 @@ public class Action extends BaseClass implements ActionInterface {
 			e.printStackTrace();
 		}
 		return flag;
+	}
+
+
+	@Override
+	public void uploadFile(WebDriver driver, WebElement ele, String filepath) {
+
+		new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(ele)).sendKeys(filepath);
+
+
 	}
 
 	@Override
@@ -763,6 +772,8 @@ public class Action extends BaseClass implements ActionInterface {
 	public void pageLoadTimeOut(WebDriver driver, int timeOut) {
 		driver.manage().timeouts().pageLoadTimeout(timeOut, TimeUnit.SECONDS);
 	}
+
+
 	@Override
 	public String screenShot(WebDriver driver, String filename) {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -785,5 +796,8 @@ public class Action extends BaseClass implements ActionInterface {
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
 		return currentDate;
 	}
+
+
+
 
 }
